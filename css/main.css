@@ -12,11 +12,25 @@ header {
   border-radius: 1rem 1rem 0rem 0rem;
   padding: 16px;
 }
+@media (max-width: 480px) {
+  header {
+    height: 25rem;
+  }
+}
 header h1 {
   margin: 0px;
 }
 header p {
   margin: 0 16px 0 0;
+}
+@media (max-width: 480px) {
+  header p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 header p a {
   text-decoration: none;
@@ -46,6 +60,14 @@ header p :hover {
   align-items: center;
   margin: 0;
 }
+@media (max-width: 480px) {
+  .navBar__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .navBar__summary {
   margin: 16px 0 0 0;
@@ -73,30 +95,6 @@ body {
   padding: 0px;
 }
 
-.timeline {
-  position: relative;
-  right: 8px;
-  padding: 1px 0;
-  border-left: 3px solid #333;
-}
-
-.timeline-dot {
-  width: 16px;
-  height: 16px;
-  background-color: #333;
-  border-radius: 50%;
-  position: absolute;
-  left: -25px;
-  top: -35px;
-}
-
-.work-experience {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
-}
-
 a.lacaUxUi {
   text-decoration: none;
   color: black;
@@ -118,13 +116,13 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
-
-section .projects {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-  margin: 0;
+@media (max-width: 480px) {
+  .hovercard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .project-cards {
@@ -132,6 +130,12 @@ section .projects {
   border-radius: 1rem;
   width: 50%;
   margin: 0 16px 0 0;
+}
+@media (max-width: 480px) {
+  .project-cards {
+    width: 100%;
+    margin: 16px 0 0 0;
+  }
 }
 .project-cards.hovercard:hover {
   transform: scale(1);

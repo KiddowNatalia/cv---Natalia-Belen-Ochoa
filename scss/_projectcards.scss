@@ -16,16 +16,21 @@ a{
 } 
 .hovercard{
     @include flexBox (flex, row,center, center);
+    @media (max-width: 480px) {
+        @include flexBox (flex, column,center, center);
+    }
+      
 }
-section .projects{
-    @include flexBox(flex,row,start,center);
-    margin: 0;
-} .project-cards{
+ .project-cards{
     border: solid 1px rgb(194, 194, 194);
     border-radius: 1rem;
     width: 50%;
     margin: 0 16px 0 0;
-        &.hovercard:hover{
+    @media (max-width: 480px) {
+        width: 100%;
+        margin: 16px 0 0 0;
+    }
+     &.hovercard:hover{
                 transform: scale(1.0);
                 background-color: rgb(255, 255, 255);
                 transition: all 0.5s;
