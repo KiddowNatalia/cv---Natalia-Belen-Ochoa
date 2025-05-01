@@ -1,0 +1,38 @@
+a{
+    &.lacaUxUi{
+        text-decoration: none;
+        color: black;
+        background-image: linear-gradient(currentColor, currentColor);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size 0.3s;
+                margin: 6px;
+                }
+                &:hover{
+                    color: rgb(0, 0, 0);
+                    background-size: 100% 2px;
+                }
+} 
+.hovercard{
+    @include flexBox (flex, row,center, center);
+}
+section .projects{
+    @include flexBox(flex,row,start,center);
+    margin: 0;
+} .project-cards{
+    border: solid 1px rgb(194, 194, 194);
+    border-radius: 1rem;
+    width: 50%;
+    margin: 0 16px 0 0;
+        &.hovercard:hover{
+                transform: scale(1.0);
+                background-color: rgb(255, 255, 255);
+                transition: all 0.5s;
+                box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.23);
+                -webkit-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.23);
+                -moz-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.23); 
+    }
+    
+}
+  

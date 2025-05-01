@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+header {
+  background-color: #424245;
+  color: white;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin: 0rem;
+  padding: 0rem;
+  border-radius: 1rem 1rem 0rem 0rem;
+  padding: 16px;
+}
+header h1 {
+  margin: 0px;
+}
+header p {
+  margin: 0 16px 0 0;
+}
+header p a {
+  text-decoration: none;
+  color: rgb(216, 216, 216);
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+  margin: 6px;
+}
+header p :hover {
+  color: white;
+  background-size: 100% 2px;
+}
+
+.logo {
+  width: 1rem;
+  margin: 0;
+  height: 1rem;
+}
+
+.navBar__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.navBar__summary {
+  margin: 16px 0 0 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  border: solid 1px black;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.23);
+}
+
+* {
+  margin: 1rem;
+  padding: 0px;
+}
+
+.timeline {
+  position: relative;
+  right: 8px;
+  padding: 1px 0;
+  border-left: 3px solid #333;
+}
+
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+  background-color: #333;
+  border-radius: 50%;
+  position: absolute;
+  left: -25px;
+  top: -35px;
+}
+
+.work-experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+a.lacaUxUi {
+  text-decoration: none;
+  color: black;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+  margin: 6px;
+}
+a:hover {
+  color: rgb(0, 0, 0);
+  background-size: 100% 2px;
+}
+
+.hovercard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+section .projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin: 0;
+}
+
+.project-cards {
+  border: solid 1px rgb(194, 194, 194);
+  border-radius: 1rem;
+  width: 50%;
+  margin: 0 16px 0 0;
+}
+.project-cards.hovercard:hover {
+  transform: scale(1);
+  background-color: rgb(255, 255, 255);
+  transition: all 0.5s;
+  box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.23);
+}
+
+/*# sourceMappingURL=main.css.map */

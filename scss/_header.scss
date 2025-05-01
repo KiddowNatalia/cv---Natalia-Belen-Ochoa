@@ -1,0 +1,49 @@
+header{
+    background-color: #424245;
+    color: white;
+    height: 10rem;
+    @include flexBox(flex, column, center, start);
+    @include spaces(0rem, 0rem);
+    border-radius: 1rem 1rem 0rem 0rem;
+    padding: 16px;
+    h1{
+        margin: 0px;
+    }
+    p{
+        margin: 0 16px 0 0;
+        a{
+            text-decoration: none;
+            color: rgb(216, 216, 216);
+            background-image: linear-gradient(currentColor, currentColor);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size 0.3s;
+            margin: 6px;
+            }
+            :hover{
+                color: white;
+                background-size: 100% 2px;
+            }
+        }
+    }
+.logo{
+    width: 1rem;
+    margin: 0;
+    height: 1rem;
+}
+.navBar__info{
+    @include flexBox(flex, row, center, center);
+    margin: 0;
+}
+.navBar__summary{
+    margin: 16px 0 0 0;
+    padding: 0;
+}
+
+
+
+
+
+
+  

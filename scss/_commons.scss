@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    font-family: "Roboto";
+    @include flexBox (flex, column, center,center);
+}
+body{
+    border: solid 1px black;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.23);
+    -webkit-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.23);
+    -moz-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.23);  
+}
+*{
+    margin: 1rem;
+    padding: 0px;
+    
+}

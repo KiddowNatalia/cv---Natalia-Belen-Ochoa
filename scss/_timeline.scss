@@ -1,0 +1,19 @@
+.timeline{
+    position: relative;
+    right: 8px;
+    padding: 1px 0;
+    border-left: 3px solid #333;
+}
+.timeline-dot {
+    width: 16px;
+    height: 16px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    left: -25px;
+    top: -35px;
+  }
+.work-experience{
+    @include flexBox(flex, column, start, start);
+   
+}
