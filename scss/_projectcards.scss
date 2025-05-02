@@ -70,10 +70,26 @@ a{
 }
 .item{
     width: 100%;
+    @include flexBox (flex, column,start, start);
     @media (max-width: 480px) {
         @include flexBox (flex, column,start, start);
         text-align: start;
         width: 100%;
         margin: 0;
     }
+}
+p {
+    &.habilidad{
+    border: solid rgb(255, 255, 255) 1px;
+    border-radius: 1rem;
+    padding: 6px;
+    background-color: #f4f4f5;
+    @include flexBox (flex, row,start, start);
+    }
+}
+.itemHabilidades{
+    @include flexBox (flex, row,start, start);
+    @media (max-width: 480px) {
+        @include flexBox (flex, column,start, start);
+            }
 }
