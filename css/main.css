@@ -12,15 +12,16 @@ header {
   border-radius: 1rem 1rem 0rem 0rem;
   padding: 16px;
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   header {
     height: 25rem;
+    width: -webkit-fill-available;
   }
 }
 header h1 {
   margin: 0px;
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   header h1 {
     text-align: center;
     width: 100%;
@@ -29,7 +30,7 @@ header h1 {
 header p {
   margin: 0 16px 0 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   header p {
     display: flex;
     flex-direction: column;
@@ -66,6 +67,15 @@ header p :hover {
   align-items: center;
   margin: 0;
 }
+@media (max-width: 480px) {
+  .navBar__info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .navBar__summary {
   margin: 16px 0 0 0;
@@ -73,7 +83,7 @@ header p :hover {
 }
 
 html {
-  font-family: "Roboto";
+  font-family: Roboto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,10 +92,20 @@ html {
 
 body {
   border: solid 1px black;
+  margin: 0;
   border-radius: 1rem;
   box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.23);
   -webkit-box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.23);
   -moz-box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.23);
+}
+@media (max-width: 480px) {
+  body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 * {
@@ -111,25 +131,29 @@ a:hover {
 .hovercard {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .hovercard {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .project-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
   border: solid 1px rgb(194, 194, 194);
   border-radius: 1rem;
   width: 100%;
   margin: 0 16px 0 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .project-cards {
     width: 100%;
     margin: 16px 0 0 0;
@@ -151,7 +175,7 @@ a:hover {
   align-items: start;
   width: 100%;
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .webDeveloper {
     display: flex;
     flex-direction: column;
@@ -167,7 +191,7 @@ a:hover {
   align-items: center;
   width: 100%;
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .cardsUxUi {
     display: flex;
     flex-direction: column;
@@ -178,6 +202,36 @@ a:hover {
 
 .devTitle {
   margin: 0;
+  text-align: start;
+}
+
+@media (max-width: 480px) {
+  .items {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+  }
+}
+
+.skills {
+  width: 80%;
+}
+
+.item {
+  width: 100%;
+}
+@media (max-width: 480px) {
+  .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    width: 100%;
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

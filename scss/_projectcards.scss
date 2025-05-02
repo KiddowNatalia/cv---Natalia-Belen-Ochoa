@@ -15,18 +15,19 @@ a{
                 }
 } 
 .hovercard{
-    @include flexBox (flex, column,center, center);
-    @media (max-width: 768px) {
-        @include flexBox (flex, column,start, start);
+    @include flexBox (flex, column,start, start);
+    @media (max-width: 480px) {
+        @include flexBox (flex, column,center, center);
     }
       
 }
  .project-cards{
+    @include flexBox (flex, column,start, start);
     border: solid 1px rgb(194, 194, 194);
     border-radius: 1rem;
     width: 100%;
     margin: 0 16px 0 0;
-    @media (max-width: 768px) {
+    @media (max-width: 480px) {
         width: 100%;
         margin: 16px 0 0 0;
     }
@@ -43,17 +44,36 @@ a{
 .webDeveloper{
     @include flexBox (flex, row,start, start);
     width: 100%;
-    @media  (max-width: 768px) {
+    @media  (max-width: 480px) {
         @include flexBox (flex, column,center, center);
     }
 }
 .cardsUxUi{
     @include flexBox (flex, row,center, center);
     width: 100%;
-    @media (max-width: 768px) {
+    @media (max-width: 480px) {
         @include flexBox (flex, column,center, center);
     }
 }
 .devTitle{
     margin: 0;
+    text-align: start;
+}
+.items{
+    @media (max-width: 480px) {
+        @include flexBox (flex, column,start, start);
+        width: 100%;
+    }
+}
+.skills{
+    width: 80%;
+}
+.item{
+    width: 100%;
+    @media (max-width: 480px) {
+        @include flexBox (flex, column,start, start);
+        text-align: start;
+        width: 100%;
+        margin: 0;
+    }
 }

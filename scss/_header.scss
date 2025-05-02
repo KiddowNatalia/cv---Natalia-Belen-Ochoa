@@ -6,19 +6,20 @@ header{
     @include spaces(0rem, 0rem);
     border-radius: 1rem 1rem 0rem 0rem;
     padding: 16px;
-    @media (max-width: 768px) {
+    @media (max-width: 480px) {
         height: 25rem;
+        width: -webkit-fill-available;
     }
     h1{
         margin: 0px;
-        @media (max-width: 768px) {
+        @media (max-width: 480px) {
             text-align: center;
             width: 100%;
         }
     }
     p{
         margin: 0 16px 0 0;
-        @media (max-width: 768px) {
+        @media (max-width: 480px) {
             @include flexBox(flex, column, center, center);
             text-align: center;
         }
@@ -46,6 +47,10 @@ header{
 .navBar__info{
     @include flexBox(flex, row, center, center);
     margin: 0;
+    @media (max-width: 480px) {
+       width: 100%;
+        @include flexBox(flex, column, center, center);
+    }
    
 }
 .navBar__summary{
