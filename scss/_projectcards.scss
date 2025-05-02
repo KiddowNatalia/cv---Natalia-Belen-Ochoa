@@ -15,9 +15,9 @@ a{
                 }
 } 
 .hovercard{
-    @include flexBox (flex, column,start, start);
+    @include flexBox (flex, column,center, center);
     @media (max-width: 768px) {
-        @include flexBox (flex, column,center, center);
+        @include flexBox (flex, column,start, start);
     }
       
 }
@@ -41,7 +41,7 @@ a{
     
 }
 .webDeveloper{
-    @include flexBox (flex, row,center, center);
+    @include flexBox (flex, row,start, start);
     width: 100%;
     @media  (max-width: 768px) {
         @include flexBox (flex, column,center, center);

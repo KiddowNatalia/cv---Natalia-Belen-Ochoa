@@ -111,15 +111,15 @@ a:hover {
 .hovercard {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 768px) {
   .hovercard {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
   }
 }
 
@@ -147,8 +147,8 @@ a:hover {
 .webDeveloper {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
   width: 100%;
 }
 @media (max-width: 768px) {
