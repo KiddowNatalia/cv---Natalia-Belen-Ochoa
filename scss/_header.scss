@@ -1,7 +1,7 @@
 header{
     background-color: #424245;
     color: white;
-    height: 10rem;
+    height: fill;
     @include flexBox(flex, column, center, start);
     @include spaces(0rem, 0rem);
     border-radius: 1rem 1rem 0rem 0rem;
@@ -46,10 +46,7 @@ header{
 .navBar__info{
     @include flexBox(flex, row, center, center);
     margin: 0;
-    @media (max-width: 768px) {
-        @include flexBox(flex, column, center, center);
-        width: 100%;
-    }
+   
 }
 .navBar__summary{
     margin: 16px 0 0 0;

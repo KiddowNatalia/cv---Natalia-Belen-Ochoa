@@ -43,7 +43,7 @@ a{
 .webDeveloper{
     @include flexBox (flex, row,center, center);
     width: 100%;
-    @media (max-width: 768px) {
+    @media  (max-width: 768px) {
         @include flexBox (flex, column,center, center);
     }
 }

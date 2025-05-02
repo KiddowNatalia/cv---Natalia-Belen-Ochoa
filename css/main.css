@@ -2,7 +2,7 @@
 header {
   background-color: #424245;
   color: white;
-  height: 10rem;
+  height: fill;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,15 +65,6 @@ header p :hover {
   justify-content: center;
   align-items: center;
   margin: 0;
-}
-@media (max-width: 768px) {
-  .navBar__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
 }
 
 .navBar__summary {
