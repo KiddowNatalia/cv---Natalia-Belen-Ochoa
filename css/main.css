@@ -112,9 +112,9 @@ a:hover {
 
 .hovercard {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
 }
 @media (max-width: 480px) {
   .hovercard {
@@ -144,6 +144,40 @@ a:hover {
   box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.23);
   -webkit-box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.23);
   -moz-box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.23);
+}
+
+.webDeveloper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 480px) {
+  .webDeveloper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.cardsUxUi {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 480px) {
+  .cardsUxUi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.devTitle {
+  margin: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
