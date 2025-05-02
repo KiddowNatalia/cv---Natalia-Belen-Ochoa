@@ -16,7 +16,7 @@ a{
 } 
 .hovercard{
     @include flexBox (flex, column,start, start);
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
         @include flexBox (flex, column,center, center);
     }
       
@@ -24,9 +24,9 @@ a{
  .project-cards{
     border: solid 1px rgb(194, 194, 194);
     border-radius: 1rem;
-    width: 50%;
+    width: 100%;
     margin: 0 16px 0 0;
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
         width: 100%;
         margin: 16px 0 0 0;
     }
@@ -42,13 +42,15 @@ a{
 }
 .webDeveloper{
     @include flexBox (flex, row,center, center);
-    @media (max-width: 480px) {
+    width: 100%;
+    @media (max-width: 768px) {
         @include flexBox (flex, column,center, center);
     }
 }
 .cardsUxUi{
     @include flexBox (flex, row,center, center);
-    @media (max-width: 480px) {
+    width: 100%;
+    @media (max-width: 768px) {
         @include flexBox (flex, column,center, center);
     }
 }

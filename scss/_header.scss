@@ -6,15 +6,19 @@ header{
     @include spaces(0rem, 0rem);
     border-radius: 1rem 1rem 0rem 0rem;
     padding: 16px;
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
         height: 25rem;
     }
     h1{
         margin: 0px;
+        @media (max-width: 768px) {
+            text-align: center;
+            width: 100%;
+        }
     }
     p{
         margin: 0 16px 0 0;
-        @media (max-width: 480px) {
+        @media (max-width: 768px) {
             @include flexBox(flex, column, center, center);
             text-align: center;
         }
@@ -42,8 +46,9 @@ header{
 .navBar__info{
     @include flexBox(flex, row, center, center);
     margin: 0;
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
         @include flexBox(flex, column, center, center);
+        width: 100%;
     }
 }
 .navBar__summary{

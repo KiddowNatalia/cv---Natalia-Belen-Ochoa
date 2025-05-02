@@ -12,7 +12,7 @@ header {
   border-radius: 1rem 1rem 0rem 0rem;
   padding: 16px;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   header {
     height: 25rem;
   }
@@ -20,10 +20,16 @@ header {
 header h1 {
   margin: 0px;
 }
+@media (max-width: 768px) {
+  header h1 {
+    text-align: center;
+    width: 100%;
+  }
+}
 header p {
   margin: 0 16px 0 0;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   header p {
     display: flex;
     flex-direction: column;
@@ -60,12 +66,13 @@ header p :hover {
   align-items: center;
   margin: 0;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .navBar__info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 }
 
@@ -116,7 +123,7 @@ a:hover {
   justify-content: start;
   align-items: start;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .hovercard {
     display: flex;
     flex-direction: column;
@@ -128,10 +135,10 @@ a:hover {
 .project-cards {
   border: solid 1px rgb(194, 194, 194);
   border-radius: 1rem;
-  width: 50%;
+  width: 100%;
   margin: 0 16px 0 0;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .project-cards {
     width: 100%;
     margin: 16px 0 0 0;
@@ -151,8 +158,9 @@ a:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .webDeveloper {
     display: flex;
     flex-direction: column;
@@ -166,8 +174,9 @@ a:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .cardsUxUi {
     display: flex;
     flex-direction: column;
